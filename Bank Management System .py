@@ -13,13 +13,13 @@ def deposit() :
     update=False
     accounts=[]
     with open("account.txt","r") as f:
-        for records in f:
-           acc_name,balance=records.strip().split(",")
-           balance=int(balance)
-           if acc_name==name:
+        for records in f:           
+         acc_name,balance=records.strip().split(",")
+         balance=int(balance)
+         if acc_name==name:
             balance+=amount
             update=True
-           accounts.append(f"{acc_name},{balance}\n")
+         accounts.append(f"{acc_name},{balance}\n")
     if update:
        with open("account.txt","w") as f:
           f.writelines(accounts)
@@ -44,8 +44,9 @@ def withdraw():
          with open ("account.txt","w") as f:
             f.writelines(accounts)
             print("Amount is withdrawl successfully")
-   else:
-         print("Insufficient amount")
+   if not update:
+      print("Account not found")
+   
 # Function of Check account balance
 def check_balance():
    name=input("Enter the name:")
