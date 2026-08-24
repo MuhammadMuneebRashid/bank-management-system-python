@@ -40,3 +40,7 @@ A simple Bank Management System built in Python using functions and file handlin
 
 ## Author
 Muneeb
+
+<img width="1920" height="1080" alt="bank 3" src="https://github.com/user-attachments/assets/f3dda07a-11a4-4a03-9eac-1227db6a9641" />
+<img width="1920" height="1080" alt="bank 1" src="https://github.com/user-attachments/assets/23b67abf-4d3f-4d7d-9f8b-fc63e8cef713" />
+
